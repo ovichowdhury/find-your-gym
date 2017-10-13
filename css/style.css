@@ -1,0 +1,421 @@
+html
+{
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*-------------------Header------------------*/
+
+#header{
+	width: 100%;
+	height: 46px;
+	background-color: #333;
+    position: fixed;
+    top:0px;
+}
+
+#header-logo img{
+	width: 70px;
+	height:40px;
+	float: left;
+	margin-left:110px;
+	margin-top:2.5px;
+}
+#header ul {
+
+	float: right;
+    list-style-type: none;
+    margin: 0;
+    margin-right:100px;
+    padding: 0;
+    overflow: hidden;    
+}
+
+#header li {
+    float: left;
+}
+
+#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#header li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+/*--------------------Slider----------------*/
+
+#slider
+{
+	margin-top:46px;
+	margin-bottom: -4px;
+	width: 100%;
+	height: auto;
+}
+
+#slider img
+{
+	width: 100%;
+	height: 292px;
+	object-fit: cover;
+}
+
+
+/*--------------------Search----------------*/
+
+#search
+{
+	width: 100%;
+	height: 360px;
+	background-image: url('../img/background.jpg');
+	background-size: 100% 200%;
+}
+
+#search #search_wrapper
+{
+	width: 370px;
+	margin: 0px auto;
+
+}
+
+#search h3{
+	color:white;
+	font-size: 26px;
+	width: 260px;
+	margin: 0px auto;
+	padding-top: 80px;
+}
+
+#search input.keyword{
+	width: 350px;
+	height: 30px;
+	margin: 0px auto;
+	border-radius: 5px;
+}
+
+#search input.searchbtn{
+	width: 350px;
+	height: 40px !important;
+	border-radius: 8px;
+	background-color: #f64a27 ;
+	color:white;
+	height: 30px;
+	margin: 0px auto;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+#search input.searchbtn:hover
+{
+	background-color: #4caf50;
+}
+
+#search input.rad{
+	margin-left: 70px;
+}
+
+
+/*--------------------Gym Slider----------------*/
+#gym-slider
+{
+	margin-top: -4px;
+	width: 100%;
+	float: left;
+	height: auto;
+	min-height: 450px;
+	background-color: #4caf50;
+}
+
+
+
+#gym-slider #wrapper
+{
+	width: 84%;
+	height: auto;
+	margin: 0px auto;
+	padding-top: 1.5%;
+}
+
+#gym-slider #wrapper .gym
+{
+	background-color: #1b3039;
+	float: left;
+	width: 23.5%;
+	min-height: 300px;
+	margin:auto .75%;
+	margin-bottom: 25px;
+}
+
+#gym-slider #wrapper h1
+{
+	margin-left: 6px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-size: 28px;
+	font-family: 'Lato', sans-serif;
+	color:white;
+}
+
+#gym-slider #wrapper hr
+{
+	margin-left: 6px;
+	width: 100%;
+	margin-top: -10px;
+	float: left;
+}
+
+
+
+#gym-slider #wrapper .gym h2
+{
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	color:white;
+}
+
+#gym-slider #wrapper .gym p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin: auto 6px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-align: justify;
+	color: #838383;
+}
+/*--------------------separator----------------*/
+
+#separator
+{
+	margin-top: -24px;
+	padding: 20px 0px;
+	background-color:#607D8B;
+	color:white;
+	width: 100%;	
+	height: 280px;
+}
+
+#separator h1
+{
+	text-align: center;
+}
+
+#separator ul li
+{
+	margin-left: 510px;
+	font-size: 18px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+/*--------------------Footer----------------*/
+#footer
+{
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+}
+
+#footer #social{
+	height: 140px;
+	background-color: #000;
+}
+
+#footer #social ul{
+	margin: 0px auto;
+	width: 64.5%;
+	padding: 0px;
+	margin-bottom:-20px;
+}
+
+#footer #social ul li{
+	width:200px;
+	height: 60px;
+	float: left;
+	display: inline;
+	list-style-type: none;
+	background-color: #292929;
+	color: #fff;
+	margin-left:17px;
+	margin-top: 37px;
+	border-radius: 5px;
+}
+
+#footer #social ul li img{
+	width: 28px;
+	height: 26px;
+	float: left;
+	margin-top:16px;
+	margin-left:32px;
+}
+
+#footer #social ul li p{
+	float: left;
+	margin: 0px;
+	padding:0px;
+	margin-top: 19px;
+	margin-left: 26px;
+	font-size: 18px;
+	font-family: Montserrat, sans-serif;
+}
+
+
+#footer #social a:hover li{
+
+	background-color: #3766c7;
+}
+
+
+#footer #foot{
+	width: 100%;
+	height: 25px;
+	background-color: #383838;
+}
+
+#footer #foot p
+{
+	font-size: 16px;
+	width: 500px;
+	color: white;
+	padding-top: 1px;
+	margin: 0px auto;
+}
+
+
+
+
+
+/*------------------About----------------*/
+
+
+#about{
+	width: 100%;
+	height: auto;
+	margin-top: -24px;
+	padding-top: 24px;
+	background-color: #fcffd6;
+	padding-bottom: 25px;
+}
+#about_wrapper
+{
+	width: 83%;
+	height: auto;
+	min-height: 400px;
+	margin: 0px auto;
+}
+
+#about_wrapper h1{
+	color: #4caf50;
+    font-family: cursive;
+}
+
+#about_wrapper hr
+{
+	margin-top: -5px;
+	border-color: #4caf50;
+}
+
+#about_wrapper p{
+	font-family: sans-serif;
+	font-size: 17px;
+	text-align: justify;
+}
+
+
+/*------------------Gym Details----------------*/
+
+#gym_details
+{
+	margin-top: 46px;
+	width: 100%;
+	height: auto;
+	background-color: #fcffd6;
+	margin-bottom: 0px;
+	padding-bottom:20px;
+
+}
+
+
+.gym img
+{
+	width:267px;
+	height:150px;
+}
+
+#gym_details_wrapper{
+	width: 84%;
+	height: auto;
+	margin: 0px auto;
+}
+
+#gym_details_wrapper img{
+	width: 100%;
+	margin: 0px auto;
+	height: auto;
+}
+
+#gym_details_wrapper h1{
+	text-transform: capitalize;
+	text-align: center;;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#notice{
+	width: 100%;
+}
+
+#notice img{
+	float:left; 
+	width:35%; 
+	margin-right:35px;
+}
+#notice fieldset{
+	height:240px; 
+	background-color:white;
+}
+
+#notice fieldset h4{
+	font-size:27px;
+}
+
+#notice fieldset p{
+
+	font-size:19px;
+}
+
+fieldset{
+	margin-top:20px;
+}
+fieldset legend{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+}
+#gym_details_wrapper h2,p{
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#gym_details_wrapper fieldset p{
+	text-transform: capitalize;
+}

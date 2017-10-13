@@ -1,0 +1,40 @@
+--login table for both user and admin login
+create table login(
+	username varchar(50),
+	password varchar(30) not null,
+	usertype varchar(10) default 'normal',
+	primary key(username)
+)ENGINE=InnoDB character set utf8;
+
+--gym_details table is the root table of the database which contains all the details of the gym
+create table gym_details(
+	username varchar(50),
+	gym_name varchar(100) not null,
+	location text not null,
+	contacts text not null,
+	services  text,
+	time_table text,
+	about text,
+	admission_fee double,
+	monthly_fee double,
+	constraint fk_gym_det foreign key(username) references login(username)
+)ENGINE=InnoDB character set utf8;
+
+--post table contains all the post for all the gyms there is a one to many relationship between gym_details and gym_post table
+create table gym_posts(
+	post_id int auto_increment,
+	username varchar(50),
+	post text not null,
+	post_date date not null,
+	primary key(post_id),
+	constraint fk_gym_post foreign key(username) references login(username)
+)ENGINE=InnoDB character set utf8;
+
+--gym gallery for storing gym images can be used for storing single or multiple image
+create table gym_gallery(
+	username varchar(50),
+	image_url text not null,
+	constraint fk_gym_gallery foreign key(username) references login(username)
+)ENGINE=InnoDB character set utf8;
+
+-- update this document if more table needed and give a version in the name of the document and send me in the skype

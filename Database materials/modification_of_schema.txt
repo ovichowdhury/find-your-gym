@@ -1,0 +1,6 @@
+alter table gym_details
+add unique(gym_name);
+
+
+alter table gym_details
+add column signup_date date;

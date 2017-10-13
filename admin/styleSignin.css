@@ -1,0 +1,39 @@
+/*for background of login page */
+.custom-background{
+    background: url("images/back.jpg");
+}
+
+.custom-div{
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    background-color: #000000;
+    color: whitesmoke;
+    width: 300px;
+    padding: 20px;
+}
+
+.custom-input{
+    width: 100%;
+    padding: 10px 3px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.custom-submit{
+    background-color: grey;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.font-custom{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
