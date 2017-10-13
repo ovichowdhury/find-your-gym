@@ -36,5 +36,3 @@ create table gym_gallery(
 	image_url text not null,
 	constraint fk_gym_gallery foreign key(username) references login(username)
 )ENGINE=InnoDB character set utf8;
-
--- update this document if more table needed and give a version in the name of the document and send me in the skype
